@@ -1,0 +1,170 @@
+/* GENERAL SETTINGS */
+
+* {
+  font-family: CaskaydiaCove Nerd Font;
+  font-size: 15px;
+  min-height: 0;
+}
+
+#waybar {
+  color: @text;
+  background: @crust;
+  border-radius: 1rem;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+  padding: 0.4rem 0.4rem;
+}
+
+/* GLOBAL SETTINGS FOR MODULES */
+
+#workspaces,
+#window,
+#tray,
+#network,
+#clock,
+#pulseaudio,
+#battery,
+#custom-lock,
+#custom-power,
+#custom-music,
+#custom-notification {
+  background-color: @base;
+  padding: 0.5rem 0.5rem;
+}
+
+/* MODULES */
+
+#workspaces {
+  margin: 0 0.2rem;
+  padding: 3px;
+  border-radius: 0.8rem;
+}
+
+#workspaces button {
+  color: @lavender;
+  padding-right: 0.8rem;
+  padding-left: 0.4rem;
+  margin: 0;
+  border: 0 transparent;
+  border-radius: 0.8rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+  color: @mauve;
+}
+
+#workspaces button.empty {
+  color: @surface2;
+}
+
+#workspaces button.persistent {
+  color: @yellow;
+}
+
+#workspaces button.special {
+  color: @green;
+}
+
+#workspaces button.urgent {
+  color: @red;
+}
+
+#workspaces button:hover {
+  color: @pink;
+  background: transparent;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+#window {
+  color: @text;
+  background-color: transparent;
+  margin: 0 0.2rem;
+  padding: 0 1rem;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+#tray {
+  margin: 0 0.2rem;
+  padding: 0 0.8rem;
+  border-radius: 0.8rem;
+}
+
+#tray menu {
+  background-color: @crust;
+}
+
+#tray menu menuitem {
+  color: @text;
+  transition-property: background-color;
+  transition-duration: 0.24s;
+}
+
+#tray menu menuitem:hover {
+  background-color: @base;
+}
+
+#network {
+  color: @blue;
+  margin-right: 0.2rem;
+  padding-right: 1rem;
+  border-radius: 0 0.8rem 0.8rem 0;
+}
+
+#pulseaudio {
+  color: @maroon;
+  margin-left: 0.2rem;
+  padding-left: 1rem;
+  border-radius: 0.8rem 0 0 0.8rem;
+}
+
+#clock {
+  color: @lavender;
+  margin: 0 0.2rem;
+  padding: 0 1rem;
+  border-radius: 0.8rem;
+}
+
+#battery {
+  color: @green;
+  border-radius: 0.8rem;
+}
+
+#battery.charging {
+  color: @green;
+}
+
+#battery.warning:not(.charging) {
+  color: @red;
+}
+
+/* CUSTOM MODULES  */
+
+#custom-notification {
+  color: @overlay2;
+  margin-left: 0.2rem;
+  padding: 0 1rem;
+  border-radius: 0.8rem;
+}
+
+#custom-music {
+  color: @lavender;
+  margin: 0 0.2rem;
+  padding: 0 1rem;
+  border-radius: 0.8rem;
+}
+
+#custom-power {
+  color: @red;
+  margin-right: 0.2rem;
+  padding-left: 1rem;
+  padding-right: 0.8rem;
+  border-radius: 0.8rem;
+}
