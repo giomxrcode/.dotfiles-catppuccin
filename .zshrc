@@ -1,7 +1,11 @@
-# Directories
+# Zinit directory
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+
+# PATHS
 PATH="$HOME/.local/bin:$PATH"
 PATH="$HOME/.console-ninja/.bin:$PATH"
+export GOPATH=$HOME/.go
+export PATH=$GOPATH/bin:$PATH
 
 # Download Zinit, if it's not there yet
 if [ ! -d "$ZINIT_HOME" ]; then
@@ -69,6 +73,3 @@ alias c='clear'
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
-
-# Exports
-export PATH=$PATH:/home/giomxrcode/.spicetify
