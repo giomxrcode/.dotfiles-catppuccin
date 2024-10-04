@@ -83,45 +83,49 @@ element.normal.active {
 element.selected.normal {
     background-color: @selected-normal-background;
     text-color:       @selected-normal-foreground;
+    border-radius:    10px;
 }
 
 element.selected.urgent {
     background-color: @selected-urgent-background;
     text-color:       @selected-urgent-foreground;
+    border-radius:    10px;
 }
 
 element.selected.active {
     background-color: @selected-active-background;
     text-color:       @selected-active-foreground;
+    border-radius:    10px;
 }
 
 element.alternate.normal {
-    background-color: @alternate-normal-background;
-    text-color:       @alternate-normal-foreground;
+    background-color: @normal-background;
+    text-color:       @normal-foreground;
 }
 
 element.alternate.urgent {
-    background-color: @alternate-urgent-background;
-    text-color:       @alternate-urgent-foreground;
+    background-color: @urgent-background;
+    text-color:       @urgent-foreground;
 }
 
 element.alternate.active {
-    background-color: @alternate-active-background;
-    text-color:       @alternate-active-foreground;
+    background-color: @active-background;
+    text-color:       @active-foreground;
 }
 
 /*--- SCROLLBAR ---*/
 scrollbar {
     width:            4px;
-    border:           0;
+    border:           0px;
+    border-radius:    10px;
     handle-color:     @scrollbar-handle;
     handle-width:     8px;
-    padding:          0;
+    padding:          0px;
 }
 
 /*--- MODE SWITCHER ---*/
 mode-switcher {
-    border:           2px 0 0;
+    border:           2px 0px 0px;
     border-color:     @separatorcolor;
 }
 
@@ -144,7 +148,7 @@ case-indicator,
 entry,
 prompt,
 button {
-    spacing:          0;
+    spacing:          0px;
     text-color:       @normal-foreground;
     background-color: transparent;
 }
