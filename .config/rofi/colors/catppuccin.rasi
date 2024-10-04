@@ -4,10 +4,74 @@
  */
 
 * {
-    background:     #1E1D2FFF;
-    background-alt: #282839FF;
-    foreground:     #D9E0EEFF;
-    selected:       #CBA6F7FF;
-    active:         #ABE9B3FF;
-    urgent:         #F28FADFF;
+    /*--- MAIN SETTINGS ---*/
+    highlight:                   bold italic;
+    scrollbar:                   true;
+
+    /*--- COLORS ---*/
+    crust:                       #11111bff;
+    mantle:                      #181825ff;
+    base:                        #1e1e2eff;
+
+    surface-0:                   #313244ff;
+    surface-1:                   #45475aff;
+    surface-2:                   #585b70ff;
+
+    overlay-0:                   #6c7086ff;
+    overlay-1:                   #7f849cff;
+    overlay-2:                   #9399b2ff;
+
+    text:                        #cdd6f4ff;
+    subtext-0:                   #a6adc8ff;
+    subtext-1:                   #bac2deff;
+
+    lavender:                    #b4befeff;
+    blue:                        #89b4faff;
+    sapphire:                    #74c7ecff;
+    sky:                         #89dcebff;
+    teal:                        #94e2d5ff;
+    green:                       #a6e3a1ff;
+    yellow:                      #f9e2afff;
+    peach:                       #fab387ff;
+    maroon:                      #eba0acff;
+    red:                         #f38ba8ff;
+    mauve:                       #cba6f7ff;
+    pink:                        #f5c2e7ff;
+    flamingo:                    #f2cdcdff;
+    rosewater:                   #f5e0dcff;
+
+    /*--- BASE THEME ---*/
+    background:                  @base;
+    background-alt:              @mantle;
+    foreground:                  @text;
+    selected:                    @mauve;
+    active:                      @green;
+    urgent:                      @red;
+
+    /*--- THEME ---*/
+    background-color:            @background;
+    border-color:                @mauve;
+    separatorcolor:              @border-color;
+    scrollbar-handle:            @border-color;
+
+    normal-background:           @background;
+    normal-foreground:           @foreground;
+    alternate-normal-background: @surface-0;
+    alternate-normal-foreground: @foreground;
+    selected-normal-background:  @overlay-0;
+    selected-normal-foreground:  @foreground;
+
+    active-background:           @active;
+    active-foreground:           @foreground;
+    alternate-active-background: @surface-0;
+    alternate-active-foreground: @foreground;
+    selected-active-background:  @overlay-0;
+    selected-active-foreground:  @active;
+
+    urgent-background:           @urgent;
+    urgent-foreground:           @foreground;
+    alternate-urgent-background: @urgent-background;
+    alternate-urgent-foreground: @urgent-foreground;
+    selected-urgent-background:  @overlay-0;
+    selected-urgent-foreground:  @urgent;
 }
