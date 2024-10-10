@@ -1,7 +1,7 @@
 # Zinit directory
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
-# PATHS
+# Paths
 PATH="$HOME/.local/bin:$PATH"
 PATH="$HOME/.console-ninja/.bin:$PATH"
 export GOPATH=$HOME/.go
